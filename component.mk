@@ -6,7 +6,8 @@ COMPONENT_SRCDIRS := $(CRYPTOAUTHLIB_DIR)/atcacert \
                      $(CRYPTOAUTHLIB_DIR)/crypto/hashes \
                      $(CRYPTOAUTHLIB_DIR)/host \
                      $(CRYPTOAUTHLIB_DIR)/mbedtls \
-                     $(CRYPTOAUTHLIB_DIR)
+                     $(CRYPTOAUTHLIB_DIR) \
+                     app/ip_protection
 
 COMPONENT_ADD_INCLUDEDIRS := $(CRYPTOAUTHLIB_DIR) app/ip_protection
 
