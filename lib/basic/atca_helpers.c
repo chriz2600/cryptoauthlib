@@ -88,7 +88,7 @@ static void hex_to_lowercase(char *buffer, size_t length)
     {
         for (index = 0; index < length; index++)
         {
-            buffer[index] = tolower(buffer[index]);
+	    buffer[index] = tolower((unsigned char) buffer[index]);
         }
     }
 }
@@ -102,7 +102,7 @@ static void hex_to_uppercase(char *buffer, size_t length)
     {
         for (index = 0; index < length; index++)
         {
-            buffer[index] = toupper(buffer[index]);
+	    buffer[index] = toupper((unsigned char)buffer[index]);
         }
     }
 }
